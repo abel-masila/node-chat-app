@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <link rel="stylesheet" href="/css/style.css"></link> 
+    <title>Node Chat</title>
 </head>
-<body>
-    <ol id="messages"></ol>
-    <form id="message-form">
-        <input type="text" name="message" placeholder="Message" />
-        <button>Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
-
+<body class="chat">
+    <div class="chat__sidebar">
+        <h3>People</h3>
+        <div id="users"></div>
+    </div>
+    <div class="chat__main">
+        <ol id="messages" class="chat__messages"></ol>
+        <div class="chat__footer">
+            <form id="message-form">
+                <input type="text" name="message" placeholder="Message" autocomplete="off" autofocus />
+                <button>Send</button>
+            </form>
+            <button id="send-location">Send location</button>
+        </div>
+       
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery.js"></script>
     <script src="/js/index.js"></script>
