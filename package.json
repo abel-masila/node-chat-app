@@ -4,6 +4,7 @@
   "description": "NodeJS chat app",
   "main": "index.js",
   "scripts": {
+    "start":"node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,6 +12,9 @@
     "Socket.io",
     "ES6"
   ],
+  "engines": {
+    "node":"8.9.4"
+  },
   "author": "Abel Masila",
   "license": "ISC",
   "dependencies": {
